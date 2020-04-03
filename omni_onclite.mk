@@ -19,7 +19,7 @@ PRODUCT_RELEASE_NAME := onclite
 
 # Inherit from this configs
 $(call inherit-product, build/target/product/embedded.mk)
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := onclite

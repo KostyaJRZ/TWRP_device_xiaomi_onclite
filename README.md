@@ -1,4 +1,4 @@
-TWRP Device Tree for Xiaomi Redmi 7/Y3
+PBRP Device Tree for Xiaomi Redmi 7/Y3
 ======================================
 
 The Xiaomi Redmi 7 (codenamed _"onclite"_) and Xiaomi Y3 (codenamed _"onc"_) is a mid-range smartphone from Xiaomi.
