@@ -110,9 +110,6 @@ TARGET_USES_LOGD := true
 TW_HAS_EDL_MODE := true
 TW_NO_USB_STORAGE := true
 
-# Show build time on the splash screen
-TW_DEVICE_VERSION=$(shell date '+%Y%m%d')
-
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
