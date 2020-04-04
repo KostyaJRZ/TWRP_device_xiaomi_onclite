@@ -1,4 +1,4 @@
-TWRP Device Tree for Xiaomi Redmi 7/Y3
+OrangeFox Device Tree for Xiaomi Redmi 7/Y3
 ======================================
 
 The Xiaomi Redmi 7 (codenamed _"onclite"_) and Xiaomi Y3 (codenamed _"onc"_) is a mid-range smartphone from Xiaomi.
@@ -25,17 +25,17 @@ This TWRP automatically detects the device region and updates the device code na
 
 ## Compile
 
-First checkout Minimal TWRP with OmniROM Tree:
+First checkout OrangeFox Tree:
 
 ```
-repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
-repo sync
+repo init -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
+repo sync -j8 --force-sync
 ```
 
 And execute these:
 
 ```
-export ALLOW_MISSING_DEPENDENCIES=true # Only if using Minimal TWRP Tree
+export ALLOW_MISSING_DEPENDENCIES=true
 . build/envsetup.sh
 lunch omni_onclite-eng
 mka recoveryimage
@@ -45,15 +45,13 @@ mka recoveryimage
 
 Testing it:
 ```
-fastboot boot out/target/product/onclite/recovery.img
+fastboot boot out/target/product/onclite/OrangeFox-Unofficial-onclite.img
 ```
 
 Flash it via fastboot:
 ```
-fastboot flash recovery recovery.img
+fastboot flash recovery OrangeFox-Unofficial-onclite.img
 ```
-
-Or use Official TWRP App to install it.
 
 ## Credits
 
